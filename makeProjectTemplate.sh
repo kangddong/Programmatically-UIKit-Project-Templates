@@ -4,7 +4,7 @@
 echo "make Programmatically UIKit App!"
 echo ""
 echo ""
-ehco ""
+echo ""
 ZIP_FILE="$HOME/Downloads/Programmatically-UIKit-Project-Templates/Templates.zip"
 DEST_DIR="$HOME/Library/Developer/Xcode"
 

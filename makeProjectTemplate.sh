@@ -5,7 +5,7 @@ echo "make Programmatically UIKit App!"
 echo ""
 echo ""
 echo ""
-ZIP_FILE="$HOME/Downloads/Programmatically-UIKit-Project-Templates/Templates.zip"
+ZIP_FILE="Templates.zip"
 DEST_DIR="$HOME/Library/Developer/Xcode"
 
 # Check if the ZIP file exists

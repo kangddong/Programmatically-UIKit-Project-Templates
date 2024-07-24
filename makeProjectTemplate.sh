@@ -5,19 +5,19 @@ echo "make Programmatically UIKit App!"
 echo ""
 echo ""
 echo ""
-ZIP_FILE="Templates.zip"
+TEMPLATES_FILE="Templates"
 DEST_DIR="$HOME/Library/Developer/Xcode"
 
 # Check if the ZIP file exists
-if [ -f "$ZIP_FILE" ]; then
-    echo "Unpacking $ZIP_FILE to $DEST_DIR..."
+if [ -d "$TEMPLATES_FILE" ]; then
+    echo "Copying $TEMPLATES_FILE to $DEST_DIR..."
     echo ""
     echo ""
     # Create the destination directory if it does not exist
     mkdir -p "$DEST_DIR"
-    # Unpack the ZIP file into the destination directory
-    unzip "$ZIP_FILE" -d "$DEST_DIR"
-    echo "Unpacking completed."
+    # Copy directory and subtree recurlsive
+    cp -R "$TEMPLATES_FILE" "$DEST_DIR"
+    echo "Copying completed."
 else
-    echo "File $ZIP_FILE does not exist."
+    echo "Directory $TEMPLATES_FILE does not exist."
 fi
